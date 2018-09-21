@@ -1,0 +1,45 @@
+Entity User
+
+    user_id
+    user_creation_date
+    user_modification_date
+    user_email
+    user_password
+    user_lastname
+    user_firstname
+    user_zipcode
+    user_country
+    user_birthdate
+    user_job_title
+    user_job_description
+    user_mailing ?????
+    user_state
+
+Entity Job
+
+    job_id
+    job_creation_date
+    job_modification_date
+    job_name
+    job_description
+    job_state
+
+Entity JobSpecialisation
+
+    job_specialisation_id
+    job_specialisation_creation_date
+    job_specialisation_modification_date
+    job_specialisation_name
+    job_specialisation_description
+    job_specialisation_state
+
+Entity UserJobSpecialisation (en relation avec JobSpecialisation et User)
+
+    user_job_specialisation_id
+    user_job_specialisation_creation_date
+    user_job_specialisation_modification_date
+    user_job_specialisation_description
+    user_job_specialisation_state
+
+
+
