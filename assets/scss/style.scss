@@ -1,13 +1,75 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+a, a:hover {
+    text-decoration:none;
+}
+
+//////////////////////////
+// *** Form Elements
+//////////////////////////
+
+input[type="submit"] {
+    cursor:pointer;
+}
+
+//////////////////////////
+// *** Common
+//////////////////////////
+
 body {
     background-color: #fff;
 }
 
 h1 {
     text-align:center;
+    color:#fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,.6);
 }
 
-section.search {
-    background: url(/images/desk.png)
+.content {
+    min-height:600px;
+}
+
+.content-home {
+    background: url(/images/home.jpg);
+    background-size: cover;
+}
+
+header {
+
+    .navbar {
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .navbar-left, .navbar-right {
+            display: flex;
+        }
+
+        .navbar-right {
+            a {
+                color:#fff;
+            }
+        }
+
+        .logo img {
+            width:120px;
+        }
+
+        .dropdown {
+
+            .dropdown-toggle {
+                color:#fff;
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                will-change: transform;
+                top: 0px;
+                left: 0px;
+                transform: translate3d(0px, 48px, 0px);
+            }
+        }
+    }
 }

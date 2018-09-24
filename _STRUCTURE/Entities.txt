@@ -24,11 +24,22 @@ Entity Job
     job_description
     job_state
 
+Entity JobSpecialisationCategory
+
+    job_specialisation_category_id
+    job_specialisation_category_creation_date
+    job_specialisation_category_modification_date
+    job_specialisation_category_parent_category_id
+    job_specialisation_category_name
+    job_specialisation_category_description
+    job_specialisation_category_state
+
 Entity JobSpecialisation
 
     job_specialisation_id
     job_specialisation_creation_date
     job_specialisation_modification_date
+    job_specialisation_category_id
     job_specialisation_name
     job_specialisation_description
     job_specialisation_state
