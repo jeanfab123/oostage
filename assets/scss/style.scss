@@ -8,8 +8,13 @@ a, a:hover {
 // *** Form Elements
 //////////////////////////
 
-input[type="submit"] {
+input[type="submit"], button {
     cursor:pointer;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #C0C0C0;
+    font-size:16px;
 }
 
 //////////////////////////
@@ -39,9 +44,11 @@ header {
 
     .navbar {
 
+        
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+
 
         .navbar-left, .navbar-right {
             display: flex;
@@ -57,6 +64,7 @@ header {
             width:120px;
         }
 
+
         .dropdown {
 
             .dropdown-toggle {
@@ -71,5 +79,45 @@ header {
                 transform: translate3d(0px, 48px, 0px);
             }
         }
+
     }
 }
+
+
+//////////////////////////
+// *** Index
+//////////////////////////
+
+.h1-index {
+    padding:40px 20%;
+    font-size:3rem;
+}
+
+section.search {
+
+    form {
+        > div {
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+            input[type="text"] {
+
+            }
+        }
+        button {
+            background-color:#ff5e00;
+            color:#fff;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            &:hover {
+                background-color:darkorange;
+            }
+        }
+    }
+}
+
+
+

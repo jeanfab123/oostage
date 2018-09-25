@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
+{% form_theme formSearch 'bootstrap_4_layout.html.twig' %}
+
 {% block title %}{% endblock %}
 
 {% block content %}
 
-    <h1>Trouvez le développeur pour votre projet</h1>
+    <h1 class='h1-index'>Trouvez le développeur pour votre projet</h1>
 
-    <!--
     <section class="search">
-        <input type="submit" class="btn btn-secondary" value="Trouver" />
-    </section>
-    -->
 
-</div>
+        {{ form(formSearch) }}
+
+    </section>
 
 {% endblock %}
