@@ -192,6 +192,32 @@ section.technologie {
     }
 }
 
+
+section.contact {
+    background:rgb(5, 212, 50);
+
+}
+
+
+
 section.job {
     background:#fff;
+}
+
+
+
+
+
+//////////////////////////
+// *** Responsive
+//////////////////////////
+
+@include media-breakpoint-down(md) {
+
+    section.explanation {
+        display:initial;
+        .explanations {
+            
+        }
+    }
 }

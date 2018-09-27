@@ -44,7 +44,7 @@ Tester le site (vérifier l'id du port)
 
 LDC : Installer Encore (pour JS et CSS)
 
-    composer require Encore
+    composer require encore
 
 Installer Yarn :
 
@@ -60,7 +60,7 @@ LDC : Installer le loader SASS
 
 LDC : lancer le watcher SASS
 
-    yarn run encore dev --watcher
+    yarn run encore dev --watch
 
     (à chaque compilation, il créera les fichiers /public/build/css/style.css et /public/build/js/js.js)
 
