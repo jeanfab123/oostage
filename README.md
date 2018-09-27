@@ -4,7 +4,7 @@ LDC (ligne de commande) : Récupérer sur GitHub le projet dans un répertoire
 
 Installer NodeJS
 
-    https://nodejs.org/
+    [Site Officiel](https://nodejs.org/)
 
 Installer Composer
 
