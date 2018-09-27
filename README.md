@@ -19,9 +19,11 @@ LDC : Installer Doctrine (si la commande précédente ne l'a pas déjà fait)
     composer require symfony/orm-pack
     composer require symfony/maker-bundle --dev
 
-Editeur : Modifier le fichier /.env.dist
+Editeur : Modifier le fichier /.env
 
     DATABASE_URL=mysql://login:pass@server:port/oostage
+
+    (remplacer login, pass et port par ceux de votre config MySQL)
 
 LDC : Création de la BDD
 
