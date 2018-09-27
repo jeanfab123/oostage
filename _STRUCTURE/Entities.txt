@@ -15,7 +15,7 @@ Entity User
     user_mailing ?????
     user_state
 
-Entity Job
+Entity Job (en relation avec JobCategory et User)
 
     job_id
     job_creation_date
@@ -24,25 +24,38 @@ Entity Job
     job_description
     job_state
 
-Entity JobSpecialisationCategory
+Entity JobCategory (en relation avec Job)
 
-    job_specialisation_category_id
-    job_specialisation_category_creation_date
-    job_specialisation_category_modification_date
-    job_specialisation_category_parent_category_id
-    job_specialisation_category_name
-    job_specialisation_category_description
-    job_specialisation_category_state
+    job_category_id
+    job_category_creation_date
+    job_category_modification_date
+    job_category_parent_category_id ??????? (peut-on lier une entité avec elle même ???)
+    job_category_name
+    job_category_description
+    job_category_state
 
-Entity JobSpecialisation
+Entity JobSpecialisation (en relation avec Job et User)
 
     job_specialisation_id
     job_specialisation_creation_date
     job_specialisation_modification_date
-    job_specialisation_category_id
     job_specialisation_name
     job_specialisation_description
     job_specialisation_state
+
+
+
+
+{*******
+
+Entity UserJob (en relation avec User)
+
+    user_job_id
+    user_job_creation_date
+    user_job_modification_date
+    user_job_name
+    user_job_description
+    user_job_state
 
 Entity UserJobSpecialisation (en relation avec JobSpecialisation et User)
 
@@ -52,5 +65,10 @@ Entity UserJobSpecialisation (en relation avec JobSpecialisation et User)
     user_job_specialisation_description
     user_job_specialisation_state
 
+*******}
 
+php bin/console make:entity NomDeLentite
 
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate

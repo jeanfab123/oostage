@@ -15,6 +15,8 @@ class SiteController extends AbstractController
     public function index()
     {
         $formSearch = $this->createFormBuilder()
+                           ->setAction($this->generateUrl('search'))
+                           ->setMethod('POST')
                            ->add('specialisation', TextType::class, [
                                'attr' => [
                                    'placeholder'    => "Exemple : PHP Vue.js Node.js",
@@ -43,5 +45,12 @@ class SiteController extends AbstractController
             'controller_name'   => 'SiteController',
             'formSearch'        => $form->createView()
         ]);
+    }
+
+    /**
+     * @Route("/search", name="search")
+     */
+    public function searchAction() {
+
     }
 }

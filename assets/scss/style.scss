@@ -1,7 +1,17 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+* {
+    font-family: OpenSans-semibold,Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+}
+
 a, a:hover {
     text-decoration:none;
+}
+
+li {
+    list-style-type: none;
 }
 
 //////////////////////////
@@ -57,6 +67,7 @@ header {
         .navbar-right {
             a {
                 color:#fff;
+                border:0;
             }
         }
 
@@ -88,12 +99,33 @@ header {
 // *** Index
 //////////////////////////
 
+section {
+    padding:50px 0;
+    h2 {
+        width:80%;
+        padding-bottom:50px;
+        margin:auto;
+        font-size: calc(1.66667vw + 28px);
+    }
+}
+
 .h1-index {
     padding:40px 20%;
     font-size:3rem;
 }
 
+section {
+    .explanations, .technologies, .jobs {
+        display:flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+    }
+}
+
 section.search {
+
+    padding:120px 0;
 
     form {
         > div {
@@ -121,3 +153,45 @@ section.search {
 
 
 
+section.explanation {
+
+    //background-color:#101e73;
+    background-color: #104e73;
+    color:#fff;
+
+    .explanations {
+        counter-reset: li;
+        li {
+            font-size:18px;
+            padding-right:20px;
+            &:before {
+                counter-increment: li;
+                content: counter(li);
+                background-color:#ff5e00;
+                border: 7px solid #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 20%;
+                text-align: center;
+                line-height: 40px;
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+section.technologie {
+    background:#fff;
+    .technologies {
+        li {
+            img {
+                width:80px;
+            }
+        }
+    }
+}
+
+section.job {
+    background:#fff;
+}
