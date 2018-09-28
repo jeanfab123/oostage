@@ -88,14 +88,14 @@ header {
                 top: 0px;
                 left: 0px;
 		padding: 0.5rem 0;
-		margin: 0.125rem 0 0; 
+		margin: 3.0rem 0 0; 
             }
         
 	.dropdown-submenu {
     position: relative;
 }
 
-.dropdown-submenu>.dropdown-menu {
+dropdown-submenu>.dropdown-menu {
     top: -100;
     left: 100%;
     margin-top: -6px;
