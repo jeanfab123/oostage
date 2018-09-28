@@ -6,7 +6,7 @@ Installer NodeJS
 
     https://nodejs.org/
 
-Installer Composer___
+Installer Composer
 
     https://getcomposer.org/download/
 
