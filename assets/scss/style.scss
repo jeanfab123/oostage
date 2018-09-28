@@ -85,17 +85,15 @@ header {
             .dropdown-menu {
                 position: absolute;
                 will-change: transform;
-                top: 0px;
+                top: 50px;
                 left: 0px;
-		padding: 0.5rem 0;
-		margin: 3.0rem 0 0; 
             }
         
-	.dropdown-submenu {
+.dropdown-submenu {
     position: relative;
 }
 
-dropdown-submenu>.dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
     top: -100;
     left: 100%;
     margin-top: -6px;
