@@ -10,7 +10,21 @@ Installer Composer
 
     https://getcomposer.org/download/
 
-LDC : "Updater" Symfony
+Installer PHP 7.2.4 et MySQL
+
+    Si Windows
+
+        Installer WAMPSERVER 3.0.6 ou supérieur : https://sourceforge.net/projects/wampserver/files/
+
+        Rajouter dans le Path : C:\wamp64\bin\php\php7.2.4
+
+        Lancer WAMPSERVER (pour MySQL)
+
+    Si Linux
+
+        Débrouillez-vous pour avoir PHP en ligne de commande et un serveur MySQL qui tourne :) !
+
+LDC : dans le répertoire du projet, "Updater" Symfony
 
     composer update
 
@@ -63,4 +77,3 @@ LDC : lancer le watcher SASS
     yarn run encore dev --watch
 
     (à chaque compilation, il créera les fichiers /public/build/css/style.css et /public/build/js/js.js)
-
