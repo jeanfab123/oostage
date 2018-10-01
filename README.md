@@ -72,6 +72,8 @@ LDC : Installer le loader SASS
 
     yarn add sass-loader node-sass --dev
 
+    (bien vérifier que le fichier /.gitignore contienne la ligne "/public/build/")
+
 LDC : lancer le watcher SASS
 
     yarn run encore dev --watch
